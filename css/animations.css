@@ -21,3 +21,26 @@
     opacity: 1;
   }
 }
+
+@keyframes leafWave {
+  0% {
+  }
+  40% {
+    transform: rotateZ(30deg);
+  }
+  45% {
+    transform: rotateZ(21deg);
+  }
+  50% {
+    transform: rotateZ(15deg);
+  }
+  55% {
+    transform: rotateZ(21deg);
+  }
+  60% {
+    transform: rotateZ(30deg);
+  }
+  100% {
+    transform: rotateZ(0deg);
+  }
+}

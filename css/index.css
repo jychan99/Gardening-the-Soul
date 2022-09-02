@@ -1,12 +1,13 @@
+html {
+  overflow: auto;
+}
 body {
   background-color: var(--myblack);
   color: aliceblue;
   font-family: "Noto Serif KR", serif;
 }
-.wrap {
+#fullpage {
   width: 500px;
-  height: 2000px;
-  background-color: rgb(40, 82, 68);
   position: relative;
   z-index: 0;
   margin: 0 auto;
@@ -18,8 +19,8 @@ body {
 }
 .homepage span:first-child {
   font-size: 18px;
-  font-weight: 200;
   padding-top: 130px;
+  font-weight: 200;
   white-space: nowrap;
   color: transparent;
 }
@@ -82,11 +83,7 @@ body {
   cursor: pointer;
 }
 .section {
+  background-color: var(--mygreen);
   height: 860px;
   padding: 0;
-}
-
-.fp-section .fp-table {
-  display: table;
-  table-layout: fixed;
 }

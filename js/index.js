@@ -1,3 +1,4 @@
+//jquery
 $(document).ready(function () {
   $("#fullpage").fullpage({
     //options here
@@ -9,3 +10,11 @@ $(document).ready(function () {
   //methods
   $.fn.fullpage.setAllowScrolling(true);
 });
+
+const leaf = document.querySelector(".homepage-image__leaf");
+
+function deleteHidden() {
+  leaf.classList.remove("hidden");
+}
+
+leaf.addEventListener("mouseover", deleteHidden);

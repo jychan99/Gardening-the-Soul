@@ -60,9 +60,11 @@ body {
   height: 200px;
   margin: 0px auto;
 
-  opacity: 0;
   animation: fadeIn 1.5s ease-in-out forwards;
   animation-delay: 3.6s;
+}
+.hidden {
+  opacity: 0;
 }
 
 .homepage-image__leaf {
@@ -73,7 +75,6 @@ body {
   height: 40px;
   margin: 0px auto;
 
-  opacity: 0;
   animation: fadeIn 1.5s ease-in-out forwards;
   animation-delay: 4.2s;
 }

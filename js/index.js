@@ -16,9 +16,12 @@ const leaf = document.querySelector(".homepage-image__leaf");
 function deleteHidden() {
   leaf.classList.remove("hidden");
 }
-function start() {
+function moveTo2() {
   $.fn.fullpage.moveTo(2);
+}
+function moveTo3() {
+  $.fn.fullpage.moveTo(3);
 }
 
 leaf.addEventListener("mouseover", deleteHidden);
-leaf.addEventListener("click", start);
+leaf.addEventListener("click", moveTo2);

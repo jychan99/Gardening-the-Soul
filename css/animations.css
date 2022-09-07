@@ -21,6 +21,14 @@
     opacity: 1;
   }
 }
+@keyframes fadeOut {
+  form {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
 
 @keyframes leafWave {
   0% {

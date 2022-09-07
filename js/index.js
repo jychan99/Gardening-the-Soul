@@ -8,7 +8,7 @@ $(document).ready(function () {
   });
 
   //methods
-  $.fn.fullpage.setAllowScrolling(true);
+  $.fn.fullpage.setAllowScrolling(false);
 });
 
 const leaf = document.querySelector(".homepage-image__leaf");

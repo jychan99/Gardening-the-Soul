@@ -79,12 +79,8 @@ body {
   animation-delay: 4.2s;
 }
 .homepage-image__leaf:hover {
-  opacity: 1;
   animation: leafWave 3s ease-out infinite;
   cursor: pointer;
-}
-.homepage-image__leaf:active {
-  animation: fadeOut 1s ease-in-out forwards;
 }
 .section {
   background-color: var(--mygreen);
@@ -104,10 +100,7 @@ body {
 .section1 p {
   font-size: 18px;
   line-height: 1.5;
-  margin: 0 30px;
-}
-.section1 span {
-  font-size: 15px;
+  margin: 0px 30px;
 }
 
 .leaf {
@@ -119,7 +112,23 @@ body {
   margin-top: 30px;
   cursor: pointer;
 }
-
-.back {
+.leaf:hover {
+  animation: leafWave 3s ease-out infinite;
   cursor: pointer;
+}
+
+.section2 {
+  text-align: left;
+}
+
+.section2 i {
+  margin-top: 30px;
+  margin-left: 20px;
+  margin-bottom: 50px;
+  cursor: pointer;
+}
+.section2 p {
+  font-size: 15px;
+  line-height: 1.5;
+  margin: 0 30px;
 }

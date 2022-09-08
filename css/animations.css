@@ -5,10 +5,10 @@
   }
   50% {
     opacity: 0.5;
-    width: 28%;
+    width: 40%;
   }
   100% {
-    width: 57%;
+    width: 80%;
     opacity: 1;
   }
 }

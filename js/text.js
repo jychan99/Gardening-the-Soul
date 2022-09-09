@@ -7,5 +7,3 @@ const back = document.querySelector(".fa-chevron-left");
 
 next.addEventListener("click", moveTo3);
 back.addEventListener("click", moveTo2);
-
-document.querySelector(".text").innerText = `dsadsa`;

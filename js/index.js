@@ -12,6 +12,8 @@ $(document).ready(function () {
 });
 
 const leaf = document.querySelector(".homepage-image__leaf");
+const next = document.querySelector(".leaf");
+const back = document.querySelector(".fa-chevron-left");
 
 function deleteHidden() {
   leaf.classList.remove("hidden");
@@ -25,3 +27,5 @@ function moveTo3() {
 
 leaf.addEventListener("mouseover", deleteHidden);
 leaf.addEventListener("click", moveTo2);
+next.addEventListener("click", moveTo3);
+back.addEventListener("click", moveTo2);

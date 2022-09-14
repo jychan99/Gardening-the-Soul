@@ -137,19 +137,21 @@ body {
   margin: 0 30px;
 }
 
-.share {
-  height: 480px;
+.closing {
+  height: 450px;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   margin-bottom: 10px;
 }
-
-.share p {
-  font-size: 20px;
-}
-
-.share img {
+.closing img {
   width: 50px;
   height: 40px;
+  margin: 0px auto;
+  margin-bottom: 30px;
+}
+.closing p {
+  text-align: center;
+  font-size: 26px;
+  margin-bottom: 30px;
 }

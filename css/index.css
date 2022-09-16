@@ -83,6 +83,7 @@ body {
   cursor: pointer;
 }
 .section {
+  position: relative;
   background-color: var(--mygreen);
   padding: 0;
 }
@@ -154,4 +155,46 @@ body {
   text-align: center;
   font-size: 26px;
   margin-bottom: 30px;
+}
+
+.share {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+  color: aliceblue;
+  opacity: 0.7;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.social__kakao {
+  background-image: url(https://d3d45df40onv5v.cloudfront.net/mbti/assets/img/kakaotalk-icon.png);
+  background-size: cover;
+  width: 35px;
+  height: 35px;
+  border: 1px solid var(--myblack);
+  border-radius: 50%;
+  cursor: pointer;
+  margin-right: 15px;
+}
+
+.social__url {
+  background-image: url(https://d3d45df40onv5v.cloudfront.net/mbti/assets/img/url-icon.png);
+  background-size: cover;
+  width: 35px;
+  height: 35px;
+  border: 1px solid var(--myblack);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.contact {
+  position: absolute;
+  bottom: 5px;
+  left: 5px;
 }

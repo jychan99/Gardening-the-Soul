@@ -11,12 +11,17 @@ $(document).ready(function () {
   $.fn.fullpage.setAllowScrolling(false);
 });
 
-const leaf = document.querySelector(".homepage-image__leaf");
+const homepageLeaf = document.querySelector(".homepage-image__leaf");
 const next = document.querySelector(".leaf");
 const back = document.querySelector(".fa-chevron-left");
+const Ani_date = document.querySelector(".section1__date");
+const Ani_text = document.querySelector(".section1__text");
 
 function deleteHidden() {
-  leaf.classList.remove("hidden");
+  homepageLeaf.classList.remove("hidden");
+}
+function deleteHidden_next() {
+  next.classList.remove("hidden");
 }
 function moveTo2() {
   $.fn.fullpage.moveTo(2);
@@ -24,8 +29,16 @@ function moveTo2() {
 function moveTo3() {
   $.fn.fullpage.moveTo(3);
 }
+function animationstart() {
+  Ani_date.classList.remove("paused");
+  Ani_text.classList.remove("paused");
+  Ani_date.classList.add("play");
+  Ani_text.classList.add("play");
+}
 
-leaf.addEventListener("mouseover", deleteHidden);
-leaf.addEventListener("click", moveTo2);
+homepageLeaf.addEventListener("mouseover", deleteHidden);
+next.addEventListener("mouseover", deleteHidden_next);
+homepageLeaf.addEventListener("click", moveTo2);
+homepageLeaf.addEventListener("click", animationstart);
 next.addEventListener("click", moveTo3);
 back.addEventListener("click", moveTo2);

@@ -47,7 +47,7 @@ body {
   height: 100%;
   overflow: hidden;
   opacity: 0;
-  animation: fadeIn 1s ease-in-out forwards;
+  animation: fadeInUp 1s ease-in-out forwards;
   animation-delay: 2.3s;
 }
 .homepage-image__main-img {
@@ -104,6 +104,25 @@ body {
   margin: 0px 30px;
 }
 
+.section1__date {
+  opacity: 0;
+  animation: fadeIn 2s ease-in-out forwards;
+  animation-delay: 0.9s;
+}
+
+.section1__text {
+  opacity: 0;
+  animation: fadeInUp 2s ease-in-out forwards;
+  animation-delay: 0.6s;
+}
+
+.paused {
+  animation-play-state: paused;
+}
+.play {
+  animation-play-state: running;
+}
+
 .leaf {
   position: relative;
   display: block;
@@ -112,6 +131,9 @@ body {
   margin: 0px auto;
   margin-top: 30px;
   cursor: pointer;
+
+  animation: fadeIn 1s ease-in-out forwards;
+  animation-delay: 4s;
 }
 .leaf:hover {
   animation: leafWave 3s ease-out infinite;
@@ -142,6 +164,7 @@ body {
   height: 450px;
   display: flex;
   flex-direction: column;
+  align-items: center;
   justify-content: flex-end;
   margin-bottom: 10px;
 }
@@ -155,15 +178,25 @@ body {
   text-align: center;
   font-size: 26px;
   margin-bottom: 30px;
+  opacity: 0;
 }
 
 .share {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.share__text {
+  display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 10px;
+  width: 250px;
+  padding-bottom: 30px;
+  margin-bottom: 15px;
   color: aliceblue;
   opacity: 0.7;
+  border-bottom: 1px solid rgba(240, 248, 255, 0.7);
 }
 
 .buttons {
@@ -194,12 +227,11 @@ body {
 }
 
 .contact {
+  display: flex;
   position: absolute;
   bottom: 5px;
   left: 5px;
-}
-.contact div {
-  margin-bottom: 10px;
+  align-items: flex-end;
 }
 
 .contact a {
@@ -207,14 +239,14 @@ body {
 }
 
 .contact__github img {
-  width: 35px;
-  height: 35px;
+  width: 30px;
+  height: 30px;
   border-radius: 50%;
   cursor: pointer;
 }
 .contact__velog img {
-  width: 35px;
-  height: 35px;
+  width: 30px;
+  height: 30px;
   border-radius: 50%;
   cursor: pointer;
 }

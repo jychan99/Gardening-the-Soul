@@ -1,15 +1,12 @@
 @keyframes typing {
   0% {
     width: 0%;
-    opacity: 0;
   }
   50% {
-    opacity: 0.5;
     width: 40%;
   }
   100% {
     width: 80%;
-    opacity: 1;
   }
 }
 
@@ -27,6 +24,16 @@
   }
   to {
     opacity: 0;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    transform: translateY(10px);
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }
 

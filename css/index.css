@@ -177,7 +177,7 @@ body {
   background-size: cover;
   width: 35px;
   height: 35px;
-  border: 1px solid var(--myblack);
+  border: none;
   border-radius: 50%;
   cursor: pointer;
   margin-right: 15px;
@@ -188,7 +188,7 @@ body {
   background-size: cover;
   width: 35px;
   height: 35px;
-  border: 1px solid var(--myblack);
+  border: none;
   border-radius: 50%;
   cursor: pointer;
 }
@@ -197,4 +197,24 @@ body {
   position: absolute;
   bottom: 5px;
   left: 5px;
+}
+.contact div {
+  margin-bottom: 10px;
+}
+
+.contact a {
+  margin: 0px 5px;
+}
+
+.contact__github img {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.contact__velog img {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  cursor: pointer;
 }

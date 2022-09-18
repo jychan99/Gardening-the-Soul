@@ -154,7 +154,7 @@ body {
 .section2 i:hover {
   animation: back 1s ease-in-out infinite;
 }
-.section2 p {
+.section2__text {
   font-size: 15px;
   line-height: 1.5;
   margin: 0 30px;
@@ -174,11 +174,13 @@ body {
   margin: 0px auto;
   margin-bottom: 30px;
 }
-.closing p {
+.closing__text {
   text-align: center;
   font-size: 26px;
   margin-bottom: 30px;
-  opacity: 0;
+
+  animation: fadeIn 1.5s ease-in-out forwards;
+  animation-delay: 4s;
 }
 
 .share {

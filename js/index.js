@@ -39,7 +39,6 @@ function animationstart() {
   next.classList.add("play");
 }
 function closing_animationstart() {
-  closing_text.classList.remove("hidden");
   closing_text.classList.remove("paused");
   closing_text.classList.add("play");
 }

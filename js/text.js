@@ -15,3 +15,12 @@ for (let i = 0; i < quotesDay.length; i++) {
     }
   }
 }
+
+//background
+const image = ["1.jpg", "2.jpg", "3.jpg", "4.jpg", "5.jpg", "6.jpg", "7.jpg"];
+
+const chosenImage = image[Math.floor(Math.random() * image.length)];
+
+document.querySelector(
+  ".section1__wallpaper"
+).src = `img/gardening the soul/${chosenImage}`;

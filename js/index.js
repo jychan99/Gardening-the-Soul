@@ -42,6 +42,15 @@ function closing_animationstart() {
   closing_text.classList.remove("paused");
   closing_text.classList.add("play");
 }
+function copyURL() {
+  var copyText = document.createElement("textarea");
+  document.body.appendChild(copyText);
+  copyText.value = "https://jychan99.github.io/Gardening-the-Soul/";
+  copyText.select();
+  document.execCommand("copy");
+  document.body.removeChild(copyText);
+  alert("클립보드에 복사되었습니다.");
+}
 
 homepageLeaf.addEventListener("mouseover", deleteHidden);
 homepageLeaf.addEventListener("click", moveTo2);

@@ -230,6 +230,7 @@ body {
 }
 
 .contact {
+  color: cornflowerblue;
   display: flex;
   position: absolute;
   bottom: 5px;
